@@ -1,0 +1,30 @@
+.sidebar-left {
+  background: #fff;
+  border-radius: 1.5rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  color: #111;
+  width: 15%;
+  height: 300px;
+
+  h2 {
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+
+    li {
+      margin: 0.5rem 0;
+      cursor: pointer;
+      transition: color 0.2s;
+
+      &:hover {
+        color: #4f46e5; // indigo-600
+      }
+    }
+  }
+}

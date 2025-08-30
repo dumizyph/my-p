@@ -1,0 +1,20 @@
+.sidebar-right {
+  background: #fff;
+  border-radius: 1.5rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  color: #111;
+  width: 20%;
+  height: 300px;
+
+  h2 {
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+  }
+
+  p {
+    font-size: 0.95rem;
+    color: #4b5563; // gray-700
+  }
+}

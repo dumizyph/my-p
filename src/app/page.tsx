@@ -1,103 +1,110 @@
-import Image from "next/image";
-
 export default function Home() {
   return (
-    <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="font-mono list-inside list-decimal text-sm/6 text-center sm:text-left">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] font-mono font-semibold px-1 py-0.5 rounded">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
+    <main className="home">
+      {/* Header */}
+      <header className="header">
+        <h1>My Portfolio 🚀</h1>
+      </header>
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+      {/* Cover Section (Hero Banner with Glassmorphism) */}
+      <section className="cover">
+        <div className="cover-bg"></div>
+
+        <div className="glass-card">
+          {/* Profile Image */}
+          <img src="/me.png" alt="Profile" className="profile-img" />
+
+          {/* Intro Text */}
+          <div>
+            <h2>Hi, I’m Rafey 👋</h2>
+            <p>
+              Full Stack Developer | Crafting code into unique digital solutions
+            </p>
+            <div className="buttons">
+              <button className="btn primary">View Projects</button>
+              <button className="btn dark">Contact Me</button>
+            </div>
+          </div>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
+      </section>
+
+      {/* Middle Layout (Left + Content + Right) */}
+      <div className="layout">
+        {/* Left Sidebar */}
+        <aside className="sidebar-left">
+          <h2>Menu</h2>
+          <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Projects</li>
+            <li>Contact</li>
+          </ul>
+        </aside>
+
+        {/* Main Content */}
+        <section className="content">
+          <h2>Content</h2>
+          <p>
+            Life is a journey that continuously tests our patience, resilience,
+            and determination, yet it also offers endless opportunities for
+            growth, learning, and achievement. Every individual faces
+            challenges, whether big or small, that shape their character and
+            define their future. In today’s fast-paced world, where competition
+            is tough and distractions are endless, it has become essential to
+            remain focused on personal goals and values. Success does not come
+            overnight; it requires consistent effort, dedication, and the
+            ability to adapt to changing circumstances. Many people give up when
+            they encounter failure, but in reality, failure is nothing more than
+            a stepping stone toward success. It teaches us valuable lessons that
+            no book or lecture can provide, and it strengthens our willpower to
+            try again with a smarter approach. At the same time, discipline
+            plays a crucial role in achieving long-term objectives. Without
+            discipline, even the most talented person can lose direction and
+            waste potential. Setting realistic goals, breaking them down into
+            smaller tasks, and working consistently is a proven strategy
+            followed by successful individuals across the globe. Moreover, it is
+            equally important to maintain a balance between physical health,
+            mental peace, and professional ambitions. Neglecting health in the
+            pursuit of success often results in regret later, while ignoring
+            personal happiness for professional gain can lead to
+            dissatisfaction. Therefore, one must cultivate positive habits such
+            as regular exercise, reading, maintaining gratitude, and spending
+            quality time with loved ones. These small practices create a strong
+            foundation for a fulfilling life. In addition, society today demands
+            not only personal excellence but also collective responsibility.
+            Helping others, respecting differences, and contributing to the
+            welfare of the community make us better human beings and create a
+            positive environment where everyone can thrive. Knowledge is another
+            pillar of progress; in the digital age, access to information has
+            never been easier, but the ability to analyze and apply that
+            knowledge wisely sets leaders apart from followers. Education should
+            not end with school or college, rather it must continue throughout
+            life as we adapt to new challenges, technologies, and global issues.
+            A successful person is not someone who only achieves financial
+            stability but someone who remains humble, compassionate, and eager
+            to learn at every stage of life. True happiness lies not in
+            competing with others but in competing with your own past self and
+            becoming better each day. If one stays committed, learns from
+            mistakes, and refuses to quit despite obstacles, there is no limit
+            to what can be achieved. In conclusion, life is a canvas where every
+            action, every choice, and every effort paints the picture of who we
+            are and what legacy we leave behind. By combining discipline,
+            positivity, perseverance, and compassion, one can not only reach
+            great heights of success but also inspire others to do the same.
+          </p>
+        </section>
+
+        {/* Right Sidebar */}
+        <aside className="sidebar-right">
+          <h2>Right Bar</h2>
+          <p>Profile, skills, ya social links.</p>
+        </aside>
+      </div>
+
+      {/* Footer */}
+      <footer className="footer">
+        <p>© 2025 My Portfolio</p>
       </footer>
-    </div>
+    </main>
   );
 }
