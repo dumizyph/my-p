@@ -5,7 +5,10 @@
   padding: 1rem;
   color: #111;
   width: 15%;
-  height: 300px;
+  height: auto; // fixed height mat do
+  position: sticky; // 👈 important
+  top: 1rem; // header ke neeche chipakne ka distance
+  align-self: flex-start; // flex layout me sahi align rahega
 
   h2 {
     font-size: 1.25rem;
@@ -23,7 +26,7 @@
       transition: color 0.2s;
 
       &:hover {
-        color: #4f46e5; // indigo-600
+        color: #4f46e5;
       }
     }
   }
