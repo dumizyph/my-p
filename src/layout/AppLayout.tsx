@@ -10,9 +10,6 @@ const AppLayout = ({ children }: any) => {
     <div className="home">
       <MainHeader />
       <Cover />
-      {/* Left Sidebar */}
-
-      {/* Main Content */}
       <div className="layout">
         <ManuSideBar />
         {children}
@@ -20,7 +17,6 @@ const AppLayout = ({ children }: any) => {
         <RightSideDetailBar />
       </div>
       <Footer />
-      {/* Right Sidebar */}
     </div>
   );
 };
