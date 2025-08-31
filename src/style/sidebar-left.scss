@@ -5,15 +5,16 @@
   padding: 1rem;
   color: #111;
   width: 15%;
-  height: auto; // fixed height mat do
-  position: sticky; // 👈 important
-  top: 1rem; // header ke neeche chipakne ka distance
-  align-self: flex-start; // flex layout me sahi align rahega
+  height: auto;
+  position: sticky;
+  top: 1rem;
+  align-self: flex-start;
 
   h2 {
     font-size: 1.25rem;
     font-weight: 700;
     margin-bottom: 1rem;
+    color: #333;
   }
 
   ul {
@@ -22,11 +23,29 @@
 
     li {
       margin: 0.5rem 0;
+      padding: 0.6rem 1rem;
+      border-radius: 0.75rem;
+      font-weight: 500;
       cursor: pointer;
-      transition: color 0.2s;
+      transition: all 0.3s ease;
+
+      a {
+        text-decoration: none;
+        color: inherit;
+        display: block;
+        width: 100%;
+      }
 
       &:hover {
+        background: #f3f4f6;
         color: #4f46e5;
+        transform: translateX(4px);
+      }
+
+      &.active {
+        background: #4f46e5;
+        color: #fff;
+        font-weight: 600;
       }
     }
   }
