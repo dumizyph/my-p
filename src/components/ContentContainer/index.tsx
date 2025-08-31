@@ -1,10 +1,11 @@
 import React from "react";
+import HomeContent from "./HomeContent";
 
 const ContentContainer = ({ activeTab }: any) => {
   const renderContent = (tab: string) => {
     switch (tab) {
       case "home":
-        return <div className="p-4">🏠 Welcome to my Portfolio Home!</div>;
+        return <HomeContent />;
 
       case "about":
         return (
