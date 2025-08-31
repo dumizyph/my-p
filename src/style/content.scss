@@ -1,10 +1,13 @@
 .content {
   flex: 1;
-  background: #fff;
+  background: var(--color-surface);
   border-radius: 1.5rem;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  color: var(--color-onSurface);
+  box-shadow: 0 2px 6px var(--shadow-surface);
   padding: 1.5rem;
-  color: #111;
+  // color: #111;
+  border: 1px solid var(--color-outline);
+
   overflow-y: auto;
 
   h2 {

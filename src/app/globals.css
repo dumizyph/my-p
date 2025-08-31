@@ -1,28 +1,61 @@
 @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap");
 
 @import "tailwindcss";
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+:root,
+.theme-light {
+  --bg-color: #ffffff;
+  --bg-btn-color: #ededed;
+  --text-color: #000000;
+  --input-bg: #ffffff;
+  --form-title-color: #000000;
+  --btn-bg: #4467fe;
+  --btn-color: #ffffff;
+  --forgot-pass: #fe4444;
+  --primary-color: #1656b4;
+  --border-color: #e0e0e0;
+
+  --color-surface: #ffffff; /* for cards, sidebar, modals, navbar backgrounds */
+  --color-outline: #e5e7eb; /* borders, dividers */
+  --color-onSurface: #111111; /* text/icons on top of surface */
+  --shadow-surface: rgba(0, 0, 0, 0.05); /* shadow for surface elements */
+}
+
+.theme-dark {
+  --bg-color: #121212;
+  --bg-btn-color: #303030;
+
+  --text-color: #ffffff;
+  --input-bg: #1e1e1e;
+  --form-title-color: #ffffff;
+  --btn-bg: #4467fe;
+  --btn-color: #ffffff;
+  --forgot-pass: #fe8888;
+  --primary-color: #1656b4;
+  --border-color: #2a2a2a;
+
+  --color-surface: #1e1e1e;
+  --color-outline: #2a2a2a;
+  --color-onSurface: #ffffff;
+  --shadow-surface: rgba(0, 0, 0, 0.4);
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
+  --color-background: var(---bg-color);
+  --color-foreground: var(--bg-color);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
+    --background: var(--bg-colo);
     --foreground: #ededed;
   }
-}
+} */
 
 body {
-  background: var(--background);
-  color: var(--foreground);
+  background: var(--bg-color);
+  color: var(--text-color);
   font-family: "Manrope", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;

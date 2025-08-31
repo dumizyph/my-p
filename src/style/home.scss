@@ -2,5 +2,5 @@
   display: flex;
   min-height: 100vh;
   flex-direction: column;
-  background: #f3f4f6; // gray-100
+  background: var(--bg-color); // gray-100
 }

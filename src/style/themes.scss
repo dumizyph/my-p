@@ -1,0 +1,27 @@
+:root,
+.theme-light {
+  --bg-color: #ffffff;
+  --bg-btn-color: #ededed;
+  --text-color: #000000;
+  --input-bg: #ffffff;
+  --form-title-color: #000000;
+  --btn-bg: #4467fe;
+  --btn-color: #ffffff;
+  --forgot-pass: #fe4444;
+  --primary-color: #1656b4;
+  --border-color: #e0e0e0;
+}
+
+.theme-dark {
+  --bg-color: #121212;
+  --bg-btn-color: #303030;
+
+  --text-color: #ffffff;
+  --input-bg: #1e1e1e;
+  --form-title-color: #ffffff;
+  --btn-bg: #4467fe;
+  --btn-color: #ffffff;
+  --forgot-pass: #fe8888;
+  --primary-color: #1656b4;
+  --border-color: #2a2a2a;
+}

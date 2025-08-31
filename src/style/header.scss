@@ -1,6 +1,6 @@
 .header {
   width: 100%;
-  background: #fff;
+  background: var(--bg-color);
   padding: 1rem;
   text-align: center;
   font-size: 1.875rem;
@@ -8,4 +8,7 @@
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
   border-bottom-left-radius: 1rem;
   border-bottom-right-radius: 1rem;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
 }

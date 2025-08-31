@@ -1,11 +1,12 @@
 .sidebar-right {
-  background: #fff;
+  background: var(--color-surface);
   border-radius: 1.5rem;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 6px var(--shadow-surface);
   padding: 1rem;
-  color: #111;
   width: 20%;
+  color: var(--color-onSurface);
   height: 300px;
+  border: 1px solid var(--color-outline);
 
   h2 {
     font-size: 1.25rem;
@@ -15,6 +16,5 @@
 
   p {
     font-size: 0.95rem;
-    color: #4b5563; // gray-700
   }
 }
