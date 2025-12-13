@@ -1,5 +1,6 @@
 "use client";
 import React, { useState, useEffect } from "react";
+import type { CSSProperties } from "react";
 
 const HomeContent = () => {
   const [currentSkill, setCurrentSkill] = useState(0);
@@ -120,7 +121,7 @@ const HomeContent = () => {
             <div
               key={index}
               className="stat-card"
-              style={{ "--delay": `${index * 0.1}s` }}
+              style={{ "--delay": `${index * 0.1}s` } as CSSProperties}
             >
               <div className="stat-icon">{stat.icon}</div>
               <div className="stat-number">{stat.number}</div>
@@ -154,10 +155,12 @@ const HomeContent = () => {
                 <div className="skill-bar">
                   <div
                     className="skill-progress"
-                    style={{
-                      "--progress": `${skill.level}%`,
-                      "--color": skill.color,
-                    }}
+                    style={
+                      {
+                        "--progress": `${skill.level}%`,
+                        "--color": skill.color,
+                      } as CSSProperties
+                    }
                   ></div>
                 </div>
               </div>

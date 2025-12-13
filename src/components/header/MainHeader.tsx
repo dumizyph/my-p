@@ -6,9 +6,9 @@ const MainHeader = () => {
   const { isDark, toggleTheme } = useTheme();
   return (
     <header className="header">
-      <label className="theme-toggle">
+      <label style={{ display: "inline-flex", alignItems: "center", gap: 8 }}>
         <input type="checkbox" checked={isDark} onChange={toggleTheme} />
-        <span className="slider"></span>
+        Dark mode
       </label>
     </header>
   );
