@@ -1,6 +1,18 @@
 "use client";
 import React, { useState, useEffect, useRef } from "react";
-
+import InstagramIcon from "@mui/icons-material/Instagram";
+import TikTokIcon from "@mui/icons-material/MusicNote"; // TikTok ka official icon MUI me nahi hota, closest
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import GitHubIcon from "@mui/icons-material/GitHub";
+import EmailIcon from "@mui/icons-material/Email";
+import CalendarMonthIcon from "@mui/icons-material/CalendarMonth";
+import PaletteIcon from "@mui/icons-material/Palette";
+import ShoppingBagIcon from "@mui/icons-material/ShoppingBag";
+import MarkEmailUnreadIcon from "@mui/icons-material/MarkEmailUnread";
+import YouTubeIcon from "@mui/icons-material/YouTube";
+import CodeIcon from "@mui/icons-material/Code";
+import DescriptionIcon from "@mui/icons-material/Description";
+import FavoriteIcon from "@mui/icons-material/Favorite";
 const BioLinksPage = () => {
   type Theme = "light" | "dark";
 
@@ -36,30 +48,41 @@ const BioLinksPage = () => {
   };
 
   // Social links with colors
+
   const socialLinks = [
     {
       name: "Instagram",
-      icon: "📷",
+      icon: <InstagramIcon />,
       url: "https://instagram.com",
       color: "#E4405F",
     },
     {
       name: "YouTube",
-      icon: "▶️",
+      icon: <YouTubeIcon />,
       url: "https://youtube.com",
       color: "#FF0000",
     },
-    { name: "TikTok", icon: "🎵", url: "https://tiktok.com", color: "#000000" },
+    {
+      name: "TikTok",
+      icon: <TikTokIcon />,
+      url: "https://tiktok.com",
+      color: "#000000",
+    },
     {
       name: "LinkedIn",
-      icon: "💼",
+      icon: <LinkedInIcon />,
       url: "https://linkedin.com",
       color: "#0077B5",
     },
-    { name: "GitHub", icon: "⚡", url: "https://github.com", color: "#181717" },
+    {
+      name: "GitHub",
+      icon: <GitHubIcon />,
+      url: "https://github.com",
+      color: "#181717",
+    },
     {
       name: "Email",
-      icon: "✉️",
+      icon: <EmailIcon />,
       url: "mailto:hello@example.com",
       color: "#EA4335",
     },
@@ -72,7 +95,7 @@ const BioLinksPage = () => {
       title: "Book a Free Consultation",
       subtitle: "Let's discuss your next project",
       url: "https://calendly.com",
-      icon: "📅",
+      icon: <CalendarMonthIcon />,
       tag: "Popular",
       isFeatured: true,
       analyticsLabel: "featured_booking",
@@ -85,7 +108,7 @@ const BioLinksPage = () => {
       title: "Design Portfolio",
       subtitle: "View my latest work & case studies",
       url: "https://portfolio.com",
-      icon: "🎨",
+      icon: <PaletteIcon />,
       tag: "New",
       isFeatured: false,
       analyticsLabel: "portfolio",
@@ -98,7 +121,7 @@ const BioLinksPage = () => {
       title: "UI Kit Shop",
       subtitle: "Premium design resources",
       url: "https://shop.com",
-      icon: "🛍️",
+      icon: <ShoppingBagIcon />,
       tag: "Free",
       isFeatured: false,
       analyticsLabel: "shop",
@@ -111,7 +134,7 @@ const BioLinksPage = () => {
       title: "Weekly Newsletter",
       subtitle: "Design tips & industry insights",
       url: "https://newsletter.com",
-      icon: "📬",
+      icon: <MarkEmailUnreadIcon />,
       isFeatured: false,
       analyticsLabel: "newsletter",
       clicks: 1456,
@@ -123,7 +146,7 @@ const BioLinksPage = () => {
       title: "YouTube Channel",
       subtitle: "Design tutorials & reviews",
       url: "https://youtube.com",
-      icon: "🎬",
+      icon: <YouTubeIcon />,
       tag: "Popular",
       isFeatured: false,
       analyticsLabel: "youtube",
@@ -136,7 +159,7 @@ const BioLinksPage = () => {
       title: "Open Source Projects",
       subtitle: "Check out my GitHub repos",
       url: "https://github.com",
-      icon: "💻",
+      icon: <CodeIcon />,
       isFeatured: false,
       analyticsLabel: "github",
       clicks: 987,
@@ -148,7 +171,7 @@ const BioLinksPage = () => {
       title: "Download Resume",
       subtitle: "PDF format, updated monthly",
       url: "https://resume.com",
-      icon: "📄",
+      icon: <DescriptionIcon />,
       isFeatured: false,
       analyticsLabel: "resume",
       clicks: 1789,
@@ -160,7 +183,7 @@ const BioLinksPage = () => {
       title: "Support My Work",
       subtitle: "Buy me a coffee ☕",
       url: "https://buymeacoffee.com",
-      icon: "❤️",
+      icon: <FavoriteIcon />,
       isFeatured: false,
       analyticsLabel: "support",
       clicks: 2156,
