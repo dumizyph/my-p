@@ -41,7 +41,8 @@ const BioLinksPage = () => {
     name: "Abdul Rafey Ahmed",
     tagline: "Product Designer & Creative Developer",
     location: "📍 San Francisco, CA",
-    image: "",
+    image:
+      "https://dev-reliantoilandgas-bucket.s3.ap-southeast-2.amazonaws.com/uploads/default/2025/November/1761956280661-Gray and Orange Simple LinkedIn Profile Picture.png",
     verified: true,
     level: "Pro",
     completionRate: 85,
@@ -170,7 +171,7 @@ const BioLinksPage = () => {
       id: 7,
       title: "Download Resume",
       subtitle: "PDF format, updated monthly",
-      url: "https://resume.com",
+      url: "https://drive.google.com/file/d/1PXr2XVKY33Lgoa_uGlIp31VjZPj3gtC2/view",
       icon: <DescriptionIcon />,
       isFeatured: false,
       analyticsLabel: "resume",
