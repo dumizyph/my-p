@@ -1014,7 +1014,11 @@ $container-max-width: 620px;
   z-index: 2;
   font-weight: 700;
 }
-
+.biolinks-page.theme--light {
+  .social-links__item:hover {
+    color: #fff; // MUI SvgIcon currentColor follow karta hai
+  }
+}
 // ============================================
 // LOADING SKELETON
 // ============================================
@@ -1329,6 +1333,7 @@ $container-max-width: 620px;
 // ============================================
 // RESPONSIVE
 // ============================================
+
 @media (max-width: 640px) {
   .biolinks-page {
     padding: $space-lg $space-md;
