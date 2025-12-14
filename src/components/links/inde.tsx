@@ -53,37 +53,73 @@ const BioLinksPage = () => {
   const socialLinks = [
     {
       name: "Instagram",
-      icon: <InstagramIcon />,
+      icon: (
+        <InstagramIcon
+          sx={{
+            fontSize: 30,
+          }}
+        />
+      ),
       url: "https://instagram.com",
       color: "#E4405F",
     },
     {
       name: "YouTube",
-      icon: <YouTubeIcon />,
+      icon: (
+        <YouTubeIcon
+          sx={{
+            fontSize: 30,
+          }}
+        />
+      ),
       url: "https://youtube.com",
       color: "#FF0000",
     },
     {
       name: "TikTok",
-      icon: <TikTokIcon />,
+      icon: (
+        <TikTokIcon
+          sx={{
+            fontSize: 30,
+          }}
+        />
+      ),
       url: "https://tiktok.com",
       color: "#000000",
     },
     {
       name: "LinkedIn",
-      icon: <LinkedInIcon />,
+      icon: (
+        <LinkedInIcon
+          sx={{
+            fontSize: 30,
+          }}
+        />
+      ),
       url: "https://linkedin.com",
       color: "#0077B5",
     },
     {
       name: "GitHub",
-      icon: <GitHubIcon />,
+      icon: (
+        <GitHubIcon
+          sx={{
+            fontSize: 30,
+          }}
+        />
+      ),
       url: "https://github.com",
       color: "#181717",
     },
     {
       name: "Email",
-      icon: <EmailIcon />,
+      icon: (
+        <EmailIcon
+          sx={{
+            fontSize: 30,
+          }}
+        />
+      ),
       url: "mailto:hello@example.com",
       color: "#EA4335",
     },
@@ -96,7 +132,13 @@ const BioLinksPage = () => {
       title: "Book a Free Consultation",
       subtitle: "Let's discuss your next project",
       url: "https://calendly.com",
-      icon: <CalendarMonthIcon />,
+      icon: (
+        <CalendarMonthIcon
+          sx={{
+            fontSize: 40,
+          }}
+        />
+      ),
       tag: "Popular",
       isFeatured: true,
       analyticsLabel: "featured_booking",
@@ -109,7 +151,13 @@ const BioLinksPage = () => {
       title: "Design Portfolio",
       subtitle: "View my latest work & case studies",
       url: "https://portfolio.com",
-      icon: <PaletteIcon />,
+      icon: (
+        <PaletteIcon
+          sx={{
+            fontSize: 40,
+          }}
+        />
+      ),
       tag: "New",
       isFeatured: false,
       analyticsLabel: "portfolio",
@@ -122,7 +170,13 @@ const BioLinksPage = () => {
       title: "UI Kit Shop",
       subtitle: "Premium design resources",
       url: "https://shop.com",
-      icon: <ShoppingBagIcon />,
+      icon: (
+        <ShoppingBagIcon
+          sx={{
+            fontSize: 40,
+          }}
+        />
+      ),
       tag: "Free",
       isFeatured: false,
       analyticsLabel: "shop",
@@ -135,7 +189,13 @@ const BioLinksPage = () => {
       title: "Weekly Newsletter",
       subtitle: "Design tips & industry insights",
       url: "https://newsletter.com",
-      icon: <MarkEmailUnreadIcon />,
+      icon: (
+        <MarkEmailUnreadIcon
+          sx={{
+            fontSize: 40,
+          }}
+        />
+      ),
       isFeatured: false,
       analyticsLabel: "newsletter",
       clicks: 1456,
@@ -147,7 +207,13 @@ const BioLinksPage = () => {
       title: "YouTube Channel",
       subtitle: "Design tutorials & reviews",
       url: "https://youtube.com",
-      icon: <YouTubeIcon />,
+      icon: (
+        <YouTubeIcon
+          sx={{
+            fontSize: 40,
+          }}
+        />
+      ),
       tag: "Popular",
       isFeatured: false,
       analyticsLabel: "youtube",
@@ -160,7 +226,13 @@ const BioLinksPage = () => {
       title: "Open Source Projects",
       subtitle: "Check out my GitHub repos",
       url: "https://github.com",
-      icon: <CodeIcon />,
+      icon: (
+        <CodeIcon
+          sx={{
+            fontSize: 40,
+          }}
+        />
+      ),
       isFeatured: false,
       analyticsLabel: "github",
       clicks: 987,
@@ -172,7 +244,13 @@ const BioLinksPage = () => {
       title: "Download Resume",
       subtitle: "PDF format, updated monthly",
       url: "https://drive.google.com/file/d/1PXr2XVKY33Lgoa_uGlIp31VjZPj3gtC2/view",
-      icon: <DescriptionIcon />,
+      icon: (
+        <DescriptionIcon
+          sx={{
+            fontSize: 40,
+          }}
+        />
+      ),
       isFeatured: false,
       analyticsLabel: "resume",
       clicks: 1789,
@@ -184,7 +262,13 @@ const BioLinksPage = () => {
       title: "Support My Work",
       subtitle: "Buy me a coffee ☕",
       url: "https://buymeacoffee.com",
-      icon: <FavoriteIcon />,
+      icon: (
+        <FavoriteIcon
+          sx={{
+            fontSize: 40,
+          }}
+        />
+      ),
       isFeatured: false,
       analyticsLabel: "support",
       clicks: 2156,
