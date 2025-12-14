@@ -40,7 +40,7 @@ const BioLinksPage = () => {
   const profileData = {
     name: "Abdul Rafey Ahmed",
     tagline: "Product Designer & Creative Developer",
-    location: "📍 San Francisco, CA",
+    location: "Islamabad, Pakistan",
     image:
       "https://dev-reliantoilandgas-bucket.s3.ap-southeast-2.amazonaws.com/uploads/default/2025/November/1761956280661-Gray and Orange Simple LinkedIn Profile Picture.png",
     verified: true,
@@ -120,7 +120,7 @@ const BioLinksPage = () => {
           }}
         />
       ),
-      url: "mailto:hello@example.com",
+      url: "mailto:hi@rafeyahmed.com",
       color: "#EA4335",
     },
   ];
@@ -146,6 +146,26 @@ const BioLinksPage = () => {
       engagement: 92,
       gradient: "linear-gradient(135deg, #667eea 0%, #764ba2 100%)",
     },
+    {
+      id: 7,
+      title: "LinkedIn",
+      subtitle: "Connect with me professionally",
+      url: "https://linkedin.com/in/itsabdulrafey",
+      icon: (
+        <LinkedInIcon
+          sx={{
+            fontSize: 40,
+          }}
+        />
+      ),
+      tag: "Popular",
+      isFeatured: false,
+      analyticsLabel: "linkedin",
+      clicks: 1540,
+      engagement: 80,
+      gradient: "linear-gradient(135deg, #0077B5 0%, #00A0DC 100%)",
+    },
+
     {
       id: 2,
       title: "Design Portfolio",
