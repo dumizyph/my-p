@@ -13,6 +13,7 @@ import YouTubeIcon from "@mui/icons-material/YouTube";
 import CodeIcon from "@mui/icons-material/Code";
 import DescriptionIcon from "@mui/icons-material/Description";
 import FavoriteIcon from "@mui/icons-material/Favorite";
+import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 const BioLinksPage = () => {
   type Theme = "light" | "dark";
 
@@ -43,7 +44,7 @@ const BioLinksPage = () => {
     location: "Islamabad, Pakistan",
     image:
       "https://dev-reliantoilandgas-bucket.s3.ap-southeast-2.amazonaws.com/uploads/default/2025/November/1761956280661-Gray and Orange Simple LinkedIn Profile Picture.png",
-    verified: true,
+    verified: "/verified-badge.png", // Verified badge image URL
     level: "Pro",
     completionRate: 85,
   };
@@ -51,42 +52,6 @@ const BioLinksPage = () => {
   // Social links with colors
 
   const socialLinks = [
-    {
-      name: "Instagram",
-      icon: (
-        <InstagramIcon
-          sx={{
-            fontSize: 30,
-          }}
-        />
-      ),
-      url: "https://instagram.com",
-      color: "#E4405F",
-    },
-    {
-      name: "YouTube",
-      icon: (
-        <YouTubeIcon
-          sx={{
-            fontSize: 30,
-          }}
-        />
-      ),
-      url: "https://youtube.com",
-      color: "#FF0000",
-    },
-    {
-      name: "TikTok",
-      icon: (
-        <TikTokIcon
-          sx={{
-            fontSize: 30,
-          }}
-        />
-      ),
-      url: "https://tiktok.com",
-      color: "#000000",
-    },
     {
       name: "LinkedIn",
       icon: (
@@ -108,7 +73,7 @@ const BioLinksPage = () => {
           }}
         />
       ),
-      url: "https://github.com",
+      url: "https://github.com/itsabdulrafey",
       color: "#181717",
     },
     {
@@ -166,86 +131,50 @@ const BioLinksPage = () => {
       gradient: "linear-gradient(135deg, #0077B5 0%, #00A0DC 100%)",
     },
 
-    {
-      id: 2,
-      title: "Design Portfolio",
-      subtitle: "View my latest work & case studies",
-      url: "https://portfolio.com",
-      icon: (
-        <PaletteIcon
-          sx={{
-            fontSize: 40,
-          }}
-        />
-      ),
-      tag: "New",
-      isFeatured: false,
-      analyticsLabel: "portfolio",
-      clicks: 1923,
-      engagement: 78,
-      gradient: "linear-gradient(135deg, #f093fb 0%, #f5576c 100%)",
-    },
-    {
-      id: 3,
-      title: "UI Kit Shop",
-      subtitle: "Premium design resources",
-      url: "https://shop.com",
-      icon: (
-        <ShoppingBagIcon
-          sx={{
-            fontSize: 40,
-          }}
-        />
-      ),
-      tag: "Free",
-      isFeatured: false,
-      analyticsLabel: "shop",
-      clicks: 3201,
-      engagement: 88,
-      gradient: "linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)",
-    },
-    {
-      id: 4,
-      title: "Weekly Newsletter",
-      subtitle: "Design tips & industry insights",
-      url: "https://newsletter.com",
-      icon: (
-        <MarkEmailUnreadIcon
-          sx={{
-            fontSize: 40,
-          }}
-        />
-      ),
-      isFeatured: false,
-      analyticsLabel: "newsletter",
-      clicks: 1456,
-      engagement: 65,
-      gradient: "linear-gradient(135deg, #43e97b 0%, #38f9d7 100%)",
-    },
-    {
-      id: 5,
-      title: "YouTube Channel",
-      subtitle: "Design tutorials & reviews",
-      url: "https://youtube.com",
-      icon: (
-        <YouTubeIcon
-          sx={{
-            fontSize: 40,
-          }}
-        />
-      ),
-      tag: "Popular",
-      isFeatured: false,
-      analyticsLabel: "youtube",
-      clicks: 2634,
-      engagement: 82,
-      gradient: "linear-gradient(135deg, #fa709a 0%, #fee140 100%)",
-    },
+    // {
+    //   id: 2,
+    //   title: "Design Portfolio",
+    //   subtitle: "View my latest work & case studies",
+    //   url: "https://portfolio.com",
+    //   icon: (
+    //     <PaletteIcon
+    //       sx={{
+    //         fontSize: 40,
+    //       }}
+    //     />
+    //   ),
+    //   tag: "New",
+    //   isFeatured: false,
+    //   analyticsLabel: "portfolio",
+    //   clicks: 1923,
+    //   engagement: 78,
+    //   gradient: "linear-gradient(135deg, #f093fb 0%, #f5576c 100%)",
+    // },
+
+    // {
+    //   id: 4,
+    //   title: "Weekly Newsletter",
+    //   subtitle: "Design tips & industry insights",
+    //   url: "https://newsletter.com",
+    //   icon: (
+    //     <MarkEmailUnreadIcon
+    //       sx={{
+    //         fontSize: 40,
+    //       }}
+    //     />
+    //   ),
+    //   isFeatured: false,
+    //   analyticsLabel: "newsletter",
+    //   clicks: 1456,
+    //   engagement: 65,
+    //   gradient: "linear-gradient(135deg, #43e97b 0%, #38f9d7 100%)",
+    // },
+
     {
       id: 6,
       title: "Open Source Projects",
       subtitle: "Check out my GitHub repos",
-      url: "https://github.com",
+      url: "https://github.com/itsabdulrafey",
       icon: (
         <CodeIcon
           sx={{
@@ -259,6 +188,26 @@ const BioLinksPage = () => {
       engagement: 58,
       gradient: "linear-gradient(135deg, #30cfd0 0%, #330867 100%)",
     },
+    {
+      id: 9,
+      title: "WhatsApp",
+      subtitle: "Message me directly",
+      url: "https://api.whatsapp.com/send/?phone=%2B923130512961&text&type=phone_number&app_absent=0",
+      icon: (
+        <WhatsAppIcon
+          sx={{
+            fontSize: 40,
+          }}
+        />
+      ),
+      tag: "Fast",
+      isFeatured: false,
+      analyticsLabel: "whatsapp",
+      clicks: 1100,
+      engagement: 86,
+      gradient: "linear-gradient(135deg, #25D366 0%, #128C7E 100%)",
+    },
+
     {
       id: 7,
       title: "Download Resume",
@@ -277,24 +226,24 @@ const BioLinksPage = () => {
       engagement: 71,
       gradient: "linear-gradient(135deg, #a8edea 0%, #fed6e3 100%)",
     },
-    {
-      id: 8,
-      title: "Support My Work",
-      subtitle: "Buy me a coffee ☕",
-      url: "https://buymeacoffee.com",
-      icon: (
-        <FavoriteIcon
-          sx={{
-            fontSize: 40,
-          }}
-        />
-      ),
-      isFeatured: false,
-      analyticsLabel: "support",
-      clicks: 2156,
-      engagement: 76,
-      gradient: "linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%)",
-    },
+    // {
+    //   id: 8,
+    //   title: "Support My Work",
+    //   subtitle: "Buy me a coffee ☕",
+    //   url: "https://buymeacoffee.com",
+    //   icon: (
+    //     <FavoriteIcon
+    //       sx={{
+    //         fontSize: 40,
+    //       }}
+    //     />
+    //   ),
+    //   isFeatured: false,
+    //   analyticsLabel: "support",
+    //   clicks: 2156,
+    //   engagement: 76,
+    //   gradient: "linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%)",
+    // },
   ];
 
   // Particles for background
@@ -486,6 +435,11 @@ const BioLinksPage = () => {
                 {profileData.name}
                 {profileData.verified && (
                   <span className="profile__badge" aria-label="Verified">
+                    <img
+                      src={profileData.verified}
+                      alt={profileData.verified}
+                    />
+
                     <span className="profile__badge-icon">✓</span>
                   </span>
                 )}
