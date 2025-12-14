@@ -44,7 +44,7 @@ const BioLinksPage = () => {
     location: "Islamabad, Pakistan",
     image:
       "https://dev-reliantoilandgas-bucket.s3.ap-southeast-2.amazonaws.com/uploads/default/2025/November/1761956280661-Gray and Orange Simple LinkedIn Profile Picture.png",
-    verified: "/verified-badge.png", // Verified badge image URL
+    verified: true,
     level: "Pro",
     completionRate: 85,
   };
@@ -435,11 +435,6 @@ const BioLinksPage = () => {
                 {profileData.name}
                 {profileData.verified && (
                   <span className="profile__badge" aria-label="Verified">
-                    <img
-                      src={profileData.verified}
-                      alt={profileData.verified}
-                    />
-
                     <span className="profile__badge-icon">✓</span>
                   </span>
                 )}
